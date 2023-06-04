@@ -174,7 +174,7 @@ app.get('/auth/google',passport.authenticate('google',{scope:['email','profile']
 app.get(
   '/auth/google/callback',
   passport.authenticate('google', {
-    successRedirect: 'http://localhost:3000',
+    successRedirect: 'https://647c751033068024852c972a--dreamy-crostata-c2305f.netlify.app/',
     failureRedirect: '/login',
   })
 );
