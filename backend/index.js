@@ -174,7 +174,7 @@ app.get('/auth/google',passport.authenticate('google',{scope:['email','profile']
 app.get(
   '/auth/google/callback',
   passport.authenticate('google', {
-    successRedirect: '/',
+    successRedirect: 'https://647c771c1899ac239495a620--chic-kulfi-18b9f2.netlify.app/',
     failureRedirect: '/login',
   })
 );
