@@ -174,8 +174,8 @@ app.get('/auth/google',passport.authenticate('google',{scope:['email','profile']
 app.get(
   '/auth/google/callback',
   passport.authenticate('google', {
-    successRedirect: 'https://647c6fdc65687c1fa46b27ab--stately-smakager-259910.netlify.app/',
-    failureRedirect: 'https://647c6fdc65687c1fa46b27ab--stately-smakager-259910.netlify.app/',
+    successRedirect: 'http://localhost:3000',
+    failureRedirect: '/login',
   })
 );
 
