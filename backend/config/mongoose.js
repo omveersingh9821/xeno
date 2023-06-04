@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery',true);
 // connect to the database
 
-// const url = process.env.MONGODB_URL;
-mongoose.connect("mongodb+srv://admin:982145Ashu@cluster0.fsfplic.mongodb.net/?retryWrites=true&w=majority"); 
+const url = process.env.MONGODB_URL
+mongoose.connect(url); 
 
 
 // acquire the connection to check if it is successfull
